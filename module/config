@@ -1,0 +1,23 @@
+ngx_module_type=HTTP
+ngx_module_name=ngx_discord_interactions_verifier
+ngx_module_srcs="   \
+    $ngx_addon_dir/ngx_discord_interactions_verifier.c  \
+    $ngx_addon_dir/ed25519/verify.c \
+    $ngx_addon_dir/ed25519/ge.c \
+    $ngx_addon_dir/ed25519/fe.c \
+    $ngx_addon_dir/ed25519/sc.c \
+    $ngx_addon_dir/ed25519/sha512.c \
+    "
+ngx_module_deps="   \
+    $ngx_addon_dir/ed25519/ed25519.h    \
+    $ngx_addon_dir/ed25519/fe.h \
+    $ngx_addon_dir/ed25519/ge.h \
+    $ngx_addon_dir/ed25519/fixedint.h   \
+    $ngx_addon_dir/ed25519/sc.h \
+    $ngx_addon_dir/ed25519/sha512.h \
+    "
+ngx_module_libs=""
+
+. auto/module
+
+ngx_addon_name=$ngx_module_name
