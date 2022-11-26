@@ -2,3 +2,8 @@
 nginx-*
 .vscode
 ngx-run
+*.js
+test*
+main
+node_modules
+package*
