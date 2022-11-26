@@ -4,7 +4,7 @@
 - Download the appropriate `.so` file (the version number should match the version of nginx installed on your system) from the `build` directory
 - Copy the `.so` file to the nginx modules directory (typically `/etc/nginx/modules-enabled`)
 - Add the following line to the top of your `nginx.conf` file:
-```
+```nginx
     load_module modules-enabled/interactions-verifier-1_18_0.so;
 ```
 
@@ -19,7 +19,7 @@
 # Usage
 - After using the `load_module` directive, you can use the `verify_interactions` directive in your `server` or `location` block to verify interactions from Discord
 - Example:
-```
+```nginx
 http {
   server {
     listen 80;
