@@ -1,5 +1,5 @@
 > **Warning**
-> This is proof of concept and not meant to be used in production. Although it verifies discord payloads correctly, it may have vulnerabilities.
+> This is proof of concept and **not meant to be used in production**. Although it verifies discord payloads correctly, it may have vulnerabilities.
 
 # Installing
 
